@@ -119,20 +119,23 @@ h1 {
   font-weight: 400;
   text-align: center;
 }
-#blog div div p {
+#blog > div > div > p:first-child {
   font-size: 20px;
   font-weight: 700;
+}
+#blog > div > div > p:not(:first-child) {
+  text-align: justify;
 }
 #blog div div p i {
   font-size: 18px;
   color: var(--orange-color);
 }
-#blog div div .blog-text {
+/* #blog div div .blog-text {
   width: 100%;
   font-size: 15px;
   font-weight: 400;
   text-align: justify;
-}
+} */
 
 #text {
   background-color: #fff;
@@ -257,6 +260,21 @@ footer div p {
 #content img.left {
   margin: 10px 35px 20px 0;
   float: left;
+}
+
+#product-add .form-control {
+  background-color: #fff;
+}
+textarea {
+  resize: none;
+}
+.btn.btn-outline-dark {
+  font-size: 15px;
+  box-shadow: var(--box-shadow);
+}
+.btn.btn-primary {
+  font-size: 17px;
+  box-shadow: var(--box-shadow);
 }
 
 @media (max-width: 768px) {

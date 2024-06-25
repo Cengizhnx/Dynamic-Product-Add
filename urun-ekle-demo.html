@@ -18,9 +18,9 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
       rel="stylesheet"
     />
-    <script src="ckeditor/build/ckeditor.js"></script>
+    <script src="public/ckeditor/build/ckeditor.js"></script>
 
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="public/css/style.css" />
   </head>
   <body>
     <section class="container py-5" id="product-add">
@@ -60,9 +60,10 @@
               <label for="description" class="mb-1">Açıklaması:</label>
               <textarea
                 class="form-control mt-1"
-                id="description"
+                id="description1"
                 name="description"
                 rows="5"
+                required
               ></textarea>
             </div>
             <div class="form-group">
@@ -229,21 +230,13 @@
                   data-bs-parent="#accordions"
                   id="accordion1Collapse"
                 >
-                  <label for="accordion1Title"></label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Accordion başlığı giriniz"
-                    id="accordion1Title"
-                    name="accordion1Title"
-                  />
-                  <label for="accordion1"></label>
                   <textarea
-                    class="form-control"
+                    class="form-control mt-1"
                     id="accordion1"
                     name="accordion1"
                     rows="5"
                     placeholder="Accordion 1 için içerik giriniz..."
+                    required
                   ></textarea>
                 </div>
                 <div
@@ -251,21 +244,13 @@
                   data-bs-parent="#accordions"
                   id="accordion2Collapse"
                 >
-                  <label for="accordion2Title"></label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Accordion başlığı giriniz"
-                    id="accordion2Title"
-                    name="accordion2Title"
-                  />
-                  <label for="accordion2"></label>
                   <textarea
-                    class="form-control"
+                    class="form-control mt-1"
                     id="accordion2"
                     name="accordion2"
                     rows="5"
                     placeholder="Accordion 2 için içerik giriniz..."
+                    required
                   ></textarea>
                 </div>
                 <div
@@ -273,21 +258,13 @@
                   data-bs-parent="#accordions"
                   id="accordion3Collapse"
                 >
-                  <label for="accordion3Title"></label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Accordion başlığı giriniz"
-                    id="accordion3Title"
-                    name="accordion3Title"
-                  />
-                  <label for="accordion3"></label>
                   <textarea
-                    class="form-control"
+                    class="form-control mt-1"
                     id="accordion3"
                     name="accordion3"
                     rows="5"
                     placeholder="Accordion 3 için içerik giriniz..."
+                    required
                   ></textarea>
                 </div>
                 <div
@@ -295,21 +272,13 @@
                   data-bs-parent="#accordions"
                   id="accordion4Collapse"
                 >
-                  <label for="accordion4Title"></label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Accordion başlığı giriniz"
-                    id="accordion4Title"
-                    name="accordion4Title"
-                  />
-                  <label for="accordion4"></label>
                   <textarea
-                    class="form-control"
+                    class="form-control mt-1"
                     id="accordion4"
                     name="accordion4"
                     rows="5"
                     placeholder="Accordion 4 için içerik giriniz..."
+                    required
                   ></textarea>
                 </div>
                 <div
@@ -317,21 +286,13 @@
                   data-bs-parent="#accordions"
                   id="accordion5Collapse"
                 >
-                  <label for="accordion5Title"></label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Accordion başlığı giriniz"
-                    id="accordion5Title"
-                    name="accordion5Title"
-                  />
-                  <label for="accordion5"></label>
                   <textarea
-                    class="form-control"
+                    class="form-control mt-1"
                     id="accordion5"
                     name="accordion5"
                     rows="5"
                     placeholder="Accordion 5 için içerik giriniz..."
+                    required
                   ></textarea>
                 </div>
                 <div
@@ -339,21 +300,13 @@
                   data-bs-parent="#accordions"
                   id="accordion6Collapse"
                 >
-                  <label for="accordion6Title"></label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Accordion başlığı giriniz"
-                    id="accordion6Title"
-                    name="accordion6Title"
-                  />
-                  <label for="accordion6"></label>
                   <textarea
-                    class="form-control"
+                    class="form-control mt-1"
                     id="accordion6"
                     name="accordion6"
                     rows="5"
                     placeholder="Accordion 6 için içerik giriniz..."
+                    required
                   ></textarea>
                 </div>
                 <div
@@ -361,13 +314,13 @@
                   data-bs-parent="#accordions"
                   id="content1Collapse"
                 >
-                  <label for="content1"></label>
                   <textarea
                     class="form-control mt-1"
                     id="content1"
                     name="content1"
                     rows="5"
                     placeholder="İçerik 1 için metin giriniz..."
+                    required
                   ></textarea>
                 </div>
                 <div
@@ -375,13 +328,13 @@
                   data-bs-parent="#accordions"
                   id="content2Collapse"
                 >
-                  <label for="content2"></label>
                   <textarea
                     class="form-control mt-1"
                     id="content2"
                     name="content2"
                     rows="5"
                     placeholder="İçerik 2 için metin giriniz..."
+                    required
                   ></textarea>
                 </div>
                 <div
@@ -389,21 +342,21 @@
                   data-bs-parent="#accordions"
                   id="content3Collapse"
                 >
-                  <label for="content3Title"></label>
                   <input
                     type="text"
                     class="form-control mb-2"
                     placeholder="İçerik başlığı giriniz"
                     id="content3Title"
                     name="content3Title"
+                    required
                   />
-                  <label for="content3"></label>
                   <textarea
                     class="form-control mt-1"
                     id="content3"
                     name="content3"
                     rows="5"
                     placeholder="İçerik 3 için metin giriniz..."
+                    required
                   ></textarea>
                 </div>
                 <div
@@ -411,21 +364,21 @@
                   data-bs-parent="#accordions"
                   id="blog1Collapse"
                 >
-                  <label for="blog1Title"></label>
                   <input
                     type="text"
                     class="form-control mb-2"
                     placeholder="Blog başlığı giriniz"
                     id="blog1Title"
                     name="blog1Title"
+                    required
                   />
-                  <label for="blog1"></label>
                   <textarea
                     class="form-control mt-1"
                     id="blog1"
                     name="blog1"
                     rows="5"
                     placeholder="Blog 1 için metin giriniz..."
+                    required
                   ></textarea>
                 </div>
                 <div
@@ -433,21 +386,21 @@
                   data-bs-parent="#accordions"
                   id="blog2Collapse"
                 >
-                  <label for="blog2Title"></label>
                   <input
                     type="text"
                     class="form-control mb-2"
                     placeholder="Blog başlığı giriniz"
                     id="blog2Title"
                     name="blog2Title"
+                    required
                   />
-                  <label for="blog2"></label>
                   <textarea
                     class="form-control mt-1"
                     id="blog2"
                     name="blog2"
                     rows="5"
                     placeholder="Blog 2 için metin giriniz..."
+                    required
                   ></textarea>
                 </div>
                 <div
@@ -455,21 +408,21 @@
                   data-bs-parent="#accordions"
                   id="blog3Collapse"
                 >
-                  <label for="blog3Title"></label>
                   <input
                     type="text"
                     class="form-control mb-2"
                     placeholder="Blog başlığı giriniz"
                     id="blog3Title"
                     name="blog3Title"
+                    required
                   />
-                  <label for="blog3"></label>
                   <textarea
                     class="form-control mt-1"
                     id="blog3"
                     name="blog3"
                     rows="5"
                     placeholder="Blog 3 için metin giriniz..."
+                    required
                   ></textarea>
                 </div>
               </div>
@@ -482,26 +435,6 @@
       </form>
     </section>
 
-    <!-- <script>
-      function validateForm() {
-        // Örnek doğrulama mantığı, tüm zorunlu alanları kontrol edin
-        const requiredFields = [
-          "description",
-          "accordion1",
-          "accordion2" /* diğer zorunlu alanları ekleyin */,
-        ];
-
-        for (let field of requiredFields) {
-          const fieldValue = document.getElementById(field).value.trim();
-          if (!fieldValue) {
-            alert(`${field} alanını doldurunuz.`);
-            return false; // form gönderimini engelle
-          }
-        }
-
-        return true; // tüm alanlar doluysa form gönderimine izin ver
-      }
-    </script> -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const editors = document.querySelectorAll("textarea");
