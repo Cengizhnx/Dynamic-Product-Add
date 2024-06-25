@@ -425,7 +425,7 @@ app.post("/urun-ekle", upload.array("images", 15), (req, res) => {
         ${content2}
       </p>
       <div
-        class="d-flex flex-column flex-lg-row align-items-center justify-content-evenly my-4"
+        class="d-flex flex-column flex-lg-row align-items-center justify-content-evenly gap-3 gap-lg-0 my-4"
       >
         <div class="content-item d-flex align-items-center">
           <i class="bi bi-patch-check-fill"></i>
@@ -489,7 +489,7 @@ app.post("/urun-ekle", upload.array("images", 15), (req, res) => {
 
     <footer>
       <div
-        class="container d-flex align-items-center justify-content-between py-3 px-3 px-lg-5"
+        class="container d-flex flex-column flex-lg-row align-items-center justify-content-between py-3 px-3 px-lg-5"
       >
         <a href="/" class="navbar-brand">ABCDE</a>
         <p>© 2024 <strong>ABCDE</strong> Tüm hakları saklıdır.</p>
